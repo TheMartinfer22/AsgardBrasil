@@ -19,7 +19,7 @@ jobs:
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "latest"
+        automatic_release_tag: "1.12.2"
         prerelease: false
         title: "AsgardBrasil"
         files: 'AsgardBrasil-1.12.2.zip'
