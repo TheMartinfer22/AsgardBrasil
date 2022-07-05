@@ -2,9 +2,9 @@ name: "release"
 on:
   push:
     branches:
-      - "main"
+      - "1.16.5"
 jobs:
-  pre-release:
+  release:
     name: "Release"
     runs-on: "ubuntu-latest"
     steps:
@@ -13,7 +13,7 @@ jobs:
       uses: thedoctor0/zip-release@main
       with:
         type: 'zip'
-        filename: 'AsgardBrasil-release.zip'
+        filename: 'AsgardBrasil-1.16.5.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
     - name: Upload Release
       uses: "marvinpinto/action-automatic-releases@latest"
@@ -22,4 +22,4 @@ jobs:
         automatic_release_tag: "latest"
         prerelease: false
         title: "AsgardBrasil"
-        files: 'AsgardBrasil-release.zip'
+        files: 'AsgardBrasil-1.16.5.zip'
