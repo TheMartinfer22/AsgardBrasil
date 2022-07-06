@@ -27,9 +27,8 @@ jobs:
       uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
-        content: "Test"
-        username: "AsgardBrasil Workflow's"
+        username: "Floki dos Workflow's"
+        avatar-url: 'https://streamingsbrasil.com/wp-content/uploads/2022/04/vikings-floki-futuro.jpg'
         embed-color: 3066993
-        embed-footer-text: '2022 AsgardBrasil'
-        embed-description: 'Você pode atualizar via Technic já ou baixando manualmente na Github'
-        embed-title: '✔️ Nova versão disponível para 1.12.2'
+        embed-description: 'Você pode atualizar via Technic já ou baixando manualmente no Github'
+        embed-title: '✅ Nova versão disponível para 1.12.2'
