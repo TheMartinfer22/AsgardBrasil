@@ -5,8 +5,6 @@ on:
       - "1.12.2"
 jobs:
   release:
-    env:
-      commits: ${{ github.event.commits[][message] }}
     name: "Release"
     runs-on: "ubuntu-latest"
     steps:
@@ -35,9 +33,8 @@ jobs:
         embed-description: |
           Você pode atualizar via Technic já ou baixando manualmente no Github
           
-          📜 **Commit Principal**
-          ${{ github.event.head_commit.message }}
+          📜 **Alterações**
+          https://github.com/TheMartinfer22/AsgardBrasil/commit/${{github.event.head_commit.id}}
 
-          ${{ env.commits }}
 
         embed-title: '⌠⚡️⌡ Nova versão do servidor disponível para 1.12.2'  
