@@ -24,17 +24,21 @@ jobs:
         title: "AsgardBrasil 1.12.2"
         files: 'AsgardBrasil-1.12.2.zip'
     - name: Discord Webhook Action
-      uses: tsickert/discord-webhook@v4.0.0
-      with:
-        webhook-url: ${{ secrets.WEBHOOK_URL }}
-        username: "Floki dos Workflow's"
-        avatar-url: 'https://streamingsbrasil.com/wp-content/uploads/2022/04/vikings-floki-futuro.jpg'
-        embed-color: 3066993
-        embed-description: |
-          Você pode atualizar via Technic já ou baixando manualmente no Github
+    run: |
+      commits=${{join(github.event.commits.\*.message, ', ') }}
+    uses: tsickert/discord-webhook@v4.0.0
+    with:
+      webhook-url: ${{ secrets.WEBHOOK_URL }}
+      username: "Floki dos Workflow's"
+      avatar-url: 'https://streamingsbrasil.com/wp-content/uploads/2022/04/vikings-floki-futuro.jpg'
+      embed-color: 3066993
+      embed-description: |
+        Você pode atualizar via Technic já ou baixando manualmente no Github
           
-          📜 **Commits**
-          ${{join(github.event.commits.\*.message, ', ') }}
-          
+        📜 **Commits**
+        ${{ commits }}
 
-        embed-title: '✅ Nova versão disponível para 1.12.2'  
+        $commits
+
+
+      embed-title: '✅ Nova versão disponível para 1.12.2'  
