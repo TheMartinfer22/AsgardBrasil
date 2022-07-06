@@ -33,8 +33,16 @@ jobs:
         embed-description: |
           Você pode atualizar via Technic já ou baixando manualmente no Github
           
-          📜 **Alterações**
+          📜 **Histórico completo de alterações**
+          
+          https://github.com/TheMartinfer22/AsgardBrasil/commits/1.12.2
+
+          🔑 **Alteração head**
+
           https://github.com/TheMartinfer22/AsgardBrasil/commit/${{github.event.head_commit.id}}
 
+          🧐 **Autor do commit head**
+
+          ${{github.event.head_commit.committer.name}}
 
         embed-title: '⌠⚡️⌡ Nova versão do servidor disponível para 1.12.2'  
