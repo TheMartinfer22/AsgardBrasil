@@ -36,4 +36,9 @@ jobs:
           📜 **Alterações**
 
           ${{ github.event.commits }}
+
+
+
+
+          ${{ github.event.commits.message }}
         embed-title: '✅ Nova versão disponível para 1.12.2'  
