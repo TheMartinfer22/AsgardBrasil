@@ -23,9 +23,6 @@ jobs:
         prerelease: true
         title: "AsgardBrasil 1.12.2"
         files: 'AsgardBrasil-1.12.2.zip'
-    - name: Cache Commits
-    run: |
-      commits=${{join(github.event.commits.\*.message, ', ') }}
     - name: Discord Webhook Action
       uses: tsickert/discord-webhook@v4.0.0
       with:
@@ -36,10 +33,7 @@ jobs:
         embed-description: |
           Você pode atualizar via Technic já ou baixando manualmente no Github
           
-          📜 **Commits**
-          ${{ commits }}
+          📜 **Commit Principal**
+          ${{ github.event.head_commit.message }}
 
-          $commits
-          
-
-        embed-title: '✅ Nova versão disponível para 1.12.2'  
+        embed-title: '⌠✅⌡ Nova versão disponível para 1.12.2'  
