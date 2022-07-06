@@ -23,3 +23,13 @@ jobs:
         prerelease: true
         title: "AsgardBrasil 1.12.2"
         files: 'AsgardBrasil-1.12.2.zip'
+    - name: Discord Webhook Action
+      uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Test"
+        username: "AsgardBrasil Workflow's"
+        embed-color: 3066993
+        embed-footer-text: '2022 AsgardBrasil'
+        embed-author-name: '✔️ Nova versão disponível para 1.12.2'
+        embed-description: 'Você pode atualizar via Technic já ou baixando manualmente na Github'
