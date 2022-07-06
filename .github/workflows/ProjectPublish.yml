@@ -33,7 +33,7 @@ jobs:
         embed-description: |
           Você pode atualizar via Technic já ou baixando manualmente no Github
           
-          📜 **Alterações**
+          📜 **Commits**
+          ${{ github.event.commits[][message] }}
 
-          ${{toJSON(github.event)}}
         embed-title: '✅ Nova versão disponível para 1.12.2'  
