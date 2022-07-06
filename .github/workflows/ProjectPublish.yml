@@ -34,7 +34,7 @@ jobs:
           Você pode atualizar via Technic já ou baixando manualmente no Github
           
           📜 **Commits**
-          ${{ contains(github.event.commits[][message]) }}
+          ${{ contains(github.event.commits) }}
 
 
         embed-title: '✅ Nova versão disponível para 1.12.2'  
