@@ -35,5 +35,6 @@ jobs:
           
           📜 **Commits**
           ${{join(github.event.commits.\*.message, ', ') }}
+          
 
         embed-title: '✅ Nova versão disponível para 1.12.2'  
