@@ -27,9 +27,5 @@ jobs:
       uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
-        content: "Test"
+        content: "✔️ Nova versão disponível para 1.12.2"
         username: "AsgardBrasil Workflow's"
-        embed-color: 3066993
-        embed-footer-text: '2022 AsgardBrasil'
-        embed-description: 'Você pode atualizar via Technic já ou baixando manualmente na Github'
-        embed-title: '✔️ Nova versão disponível para 1.12.2'
