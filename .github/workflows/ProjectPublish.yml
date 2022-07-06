@@ -35,10 +35,5 @@ jobs:
           
           📜 **Alterações**
 
-          ${{ github.event.commits }}
-
-
-
-
-          ${{ github.event.commits.message }}
+          ${{toJSON(github.event)}}
         embed-title: '✅ Nova versão disponível para 1.12.2'  
