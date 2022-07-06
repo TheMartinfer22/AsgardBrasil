@@ -5,6 +5,8 @@ on:
       - "1.12.2"
 jobs:
   release:
+    env:
+      commits: ${{ github.event.commits[][message] }}
     name: "Release"
     runs-on: "ubuntu-latest"
     steps:
@@ -36,4 +38,6 @@ jobs:
           📜 **Commit Principal**
           ${{ github.event.head_commit.message }}
 
-        embed-title: '⌠✅⌡ Nova versão disponível para 1.12.2'  
+          ${{ env.commits }}
+
+        embed-title: '⌠⚡️⌡ Nova versão do servidor disponível para 1.12.2'  
