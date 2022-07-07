@@ -132,13 +132,13 @@
 	[Dragons.Attributes]
 		#Damage dealt from a successful lightning breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 		#Range: 0.0 ~ 10000.0
-		"Dragon Attack Damage(Lightning breath)" = 3.5
+		"Dragon Attack Damage(Lightning breath)" = 6.5
 		#Dragon Flute Distance - how many chunks away is the dragon flute effective?
 		#Range: 0 ~ 10000
 		"Dragon Flute Distance" = 4
 		#Max dragon health. Health is scaled to this
 		#Range: 1.0 ~ 100000.0
-		"Dragon Health" = 500.0
+		"Dragon Health" = 1000.0
 		#Change this to slow down or speed up dragon or amphithere flight.
 		#Range: 0.0 ~ 2.0
 		"Dragon Flight Speed Modifier" = 1.0
@@ -146,10 +146,10 @@
 		"Dragon Moved Wrongly Error Fix" = false
 		#Damage dealt from a successful fire breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 		#Range: 0.0 ~ 10000.0
-		"Dragon Attack Damage(Fire breath)" = 2.0
+		"Dragon Attack Damage(Fire breath)" = 4.0
 		#Max dragon attack damage. Attack Damage is scaled to this
 		#Range: 1 ~ 10000
-		"Dragon Attack Damage" = 17
+		"Dragon Attack Damage" = 30
 		#How long it takes(in ticks) for a dragon egg to hatch
 		#Range: > 1
 		"Dragon Egg Hatch Time" = 7200
@@ -158,7 +158,7 @@
 		"Dragon Flap Noise Distance" = 4
 		#Damage dealt from a successful ice breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 		#Range: 0.0 ~ 10000.0
-		"Dragon Attack Damage(Ice breath)" = 2.5
+		"Dragon Attack Damage(Ice breath)" = 8.5
 
 [Mobs]
 
@@ -169,13 +169,13 @@
 		"Sea Serpent Griefing" = false
 		#Default sea serpent attack strength, this is scaled to the sea serpent's particular size
 		#Range: 1.0 ~ 10000.0
-		"Sea Serpent Base Attack Strength" = 4.0
+		"Sea Serpent Base Attack Strength" = 9.0
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
 		"Spawn Sea Serpent Chance" = 250
 		#Default sea serpent health, this is scaled to the sea serpent's particular size
 		#Range: 1.0 ~ 10000.0
-		"Sea Serpent Base Health" = 20.0
+		"Sea Serpent Base Health" = 70.0
 
 	[Mobs.Others]
 		#True if hydra caves are allowed to generate
@@ -213,7 +213,7 @@
 		"Spawn Gorgons" = true
 		#Maximum gorgon health
 		#Range: 1.0 ~ 10000.0
-		"Gorgon Max Health" = 100.0
+		"Gorgon Max Health" = 400.0
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
 		"Spawn Gorgon Chance" = 75
@@ -226,7 +226,7 @@
 		"Death Worm Spawn Check Chance" = 3
 		#Default deathworm health, this is scaled to the worm's particular size
 		#Range: 1.0 ~ 10000.0
-		"Death Worm Base Health" = 10.0
+		"Death Worm Base Health" = 40.0
 		#Default deathworm attack strength, this is scaled to the worm's particular size
 		#Range: 1.0 ~ 10000.0
 		"Death Worm Base Attack Strength" = 3.0
@@ -255,7 +255,7 @@
 		"Spawn Sirens Chance" = 400
 		#Maximum siren health
 		#Range: 1.0 ~ 10000.0
-		"Siren Max Health" = 50.0
+		"Siren Max Health" = 100.0
 
 	[Mobs.Cockatrice]
 		#Maximum cockatrice health
