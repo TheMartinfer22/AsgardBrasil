@@ -23,3 +23,26 @@ jobs:
         prerelease: true
         title: "AsgardBrasil 1.16.5"
         files: 'AsgardBrasil-1.16.5.zip'
+    - name: Discord Webhook Action
+      uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        username: "Floki dos Workflow's"
+        avatar-url: 'https://streamingsbrasil.com/wp-content/uploads/2022/04/vikings-floki-futuro.jpg'
+        embed-color: 3066993
+        embed-description: |
+          Você pode atualizar via Technic já ou baixando manualmente no Github
+          
+          📜 **Histórico completo de alterações**
+          
+          https://github.com/TheMartinfer22/AsgardBrasil/commits/1.16.5
+
+          🔑 **Alteração head**
+
+          https://github.com/TheMartinfer22/AsgardBrasil/commit/${{github.event.head_commit.id}}
+
+          🧐 **Autor do commit head**
+
+          ${{github.event.head_commit.committer.name}}
+
+        embed-title: '⌠⚡️⌡ Nova versão do servidor disponível para 1.16.5'  
