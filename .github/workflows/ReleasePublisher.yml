@@ -36,11 +36,11 @@ jobs:
           
           📜 **Histórico completo de alterações**
           
-          - https://github.com/TheMartinfer22/AsgardBrasil/commits/1.16.5
+          https://github.com/TheMartinfer22/AsgardBrasil/commits/1.16.5
 
           🔑 **Alteração Chave**
 
-          - https://github.com/TheMartinfer22/AsgardBrasil/commit/${{github.event.head_commit.id}}
+          https://github.com/TheMartinfer22/AsgardBrasil/commit/${{github.event.head_commit.id}}
 
         embed-title: '⌠⚡️⌡ Nova versão do servidor disponível para o servidor!'  
     - name: "Upload to CurseForge"
@@ -48,8 +48,7 @@ jobs:
       with:
         api-token: "${{ secrets.CF_API_TOKEN }}"
         project-id: "424145"
-        modpack-path: "./AsgardBrasil-1.16.5.zip"
-        modpack-server-path: "./modpack-server.zip" # Optional
+        modpack-path: "AsgardBrasil-1.16.5.zip"
         game-version: "1.16.5" # Optional
         display-name: "AsgardBrasil"
         server-display-name: "AsgardBrasil Community Server" # Optional
