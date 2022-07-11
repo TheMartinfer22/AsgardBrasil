@@ -44,10 +44,13 @@ jobs:
 
         embed-title: '⌠⚡️⌡ Nova versão do servidor disponível para o servidor!'  
     - name: "Upload to CurseForge"
-      uses: itsmeow/curseforge-upload@v3
+      uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
       with:
-        file_path: "AsgardBrasil-1.16.5.zip"
-        game_endpoint: "minecraft"
-        game_versions: "Minecraft 1.16:1.16.5,Java 11,Forge"
-        project_id: "424145"
-        token: "${{ secrets.CF_API_TOKEN }}"
+        api-token: "${{ secrets.CF_API_TOKEN }}"
+        project-id: "424145"
+        modpack-path: "./AsgardBrasil-1.16.5.zip"
+        modpack-server-path: "./modpack-server.zip" # Optional
+        game-version: "1.16.5" # Optional
+        display-name: "AsgardBrasil"
+        server-display-name: "AsgardBrasil Community Server" # Optional
+        release-type: "alpha"
