@@ -46,9 +46,9 @@ jobs:
     - name: "Upload to CurseForge"
       uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
       with:
-        api-token: "${{ secrets.CF_API_TOKEN }}"
-        project-id: "424145"
-        modpack-path: "./AsgardBrasil-1.16.5.zip"
+        api-token: ${{ secrets.CF_API_TOKEN }}
+        project-id: '424145'
+        modpack-path: './AsgardBrasil-1.16.5.zip'
         game-version: '1.16.5'
-        display-name: "AsgardBrasil"
-        release-type: "alpha"
+        display-name: 'AsgardBrasil'
+        release-type: 'alpha'
