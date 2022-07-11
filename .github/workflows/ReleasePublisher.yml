@@ -51,5 +51,4 @@ jobs:
         modpack-path: "AsgardBrasil-1.16.5.zip"
         game-version: "1.16.5" # Optional
         display-name: "AsgardBrasil"
-        server-display-name: "AsgardBrasil Community Server" # Optional
         release-type: "alpha"
