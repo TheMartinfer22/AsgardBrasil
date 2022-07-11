@@ -31,18 +31,23 @@ jobs:
         avatar-url: 'https://streamingsbrasil.com/wp-content/uploads/2022/04/vikings-floki-futuro.jpg'
         embed-color: 3066993
         embed-description: |
-          Você pode atualizar via Technic já ou baixando manualmente no Github
+          Você pode atualizar via Technic, Curseforge ou baixando manualmente no Github.
+          Dica: Utilizando o TLauncher você pode pesquisar o modpack também.
           
           📜 **Histórico completo de alterações**
           
-          https://github.com/TheMartinfer22/AsgardBrasil/commits/1.16.5
+          - https://github.com/TheMartinfer22/AsgardBrasil/commits/1.16.5
 
-          🔑 **Alteração head**
+          🔑 **Alteração Chave**
 
-          https://github.com/TheMartinfer22/AsgardBrasil/commit/${{github.event.head_commit.id}}
+          - https://github.com/TheMartinfer22/AsgardBrasil/commit/${{github.event.head_commit.id}}
 
-          🧐 **Autor do commit head**
-
-          ${{github.event.head_commit.committer.name}}
-
-        embed-title: '⌠⚡️⌡ Nova versão do servidor disponível para 1.16.5'  
+        embed-title: '⌠⚡️⌡ Nova versão do servidor disponível para o servidor!'  
+    - name: "Upload to CurseForge"
+      uses: itsmeow/curseforge-upload@v3
+      with:
+        file_path: "AsgardBrasil-1.16.5.zip"
+        game_endpoint: "minecraft"
+        game_versions: "Minecraft 1.16:1.16.5,Java 11,Forge"
+        project_id: "424145"
+        token: "${{ secrets.CF_API_TOKEN }}"
