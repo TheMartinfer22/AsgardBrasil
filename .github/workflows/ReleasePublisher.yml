@@ -48,7 +48,7 @@ jobs:
       with:
         api-token: "${{ secrets.CF_API_TOKEN }}"
         project-id: "424145"
-        modpack-path: "AsgardBrasil-1.16.5.zip"
-        game-version: "1.16.5" # Optional
+        modpack-path: "./AsgardBrasil-1.16.5.zip"
+        game-version: "1.16.5"
         display-name: "AsgardBrasil"
         release-type: "alpha"
